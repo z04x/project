@@ -390,7 +390,7 @@ z-index: 50;
 }
 @media (max-width: 1092px){
     .iam{
-        padding: 0 0 206px 0;
+        padding: 0 0 0 0;
     }
     .beackimage {
 		&__iam {
@@ -438,6 +438,137 @@ z-index: 50;
         }
         &__title{
             font-size: 82px;
+        }
+    }
+}
+/************************ GALERY ***********************/
+
+
+.galery {
+	&__container {
+        text-align: center;
+
+	}
+    &__content{
+
+        }
+    }
+
+
+.content-galery {
+
+		&__card {
+            gap: 25px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            justify-content: center;
+            align-items: center;
+        :nth-child(even){
+            margin-top: 55px;
+        }
+    }
+        &__more{
+            display: contents; 
+		}
+    &__title{
+        font-family: 'Geometria';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: right;
+        padding-right: 321px;
+    }
+}
+#more {display: none;}
+.content-galery__btn{
+    padding: 20px 63px;
+    background-color: #101010;
+    border: 1px solid #fff;
+    font-family: 'Geometria';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    margin-top: 58px;  
+
+}
+@media (max-width: 1350px){
+    .page {
+
+		&__galery {
+		}
+}
+.galery {
+
+		&__container {
+		}
+
+		&__content {
+		}
+}
+.content-galery {
+
+		&__card {
+            img{
+
+            }
+		}
+
+		&__more {
+		}
+
+		&__btn {
+		}
+}
+
+}
+@media (max-width: 1030px){
+        .page {
+
+		&__galery {
+           
+		}
+}
+.galery {
+
+		&__container {
+		}
+
+		&__content {
+		}
+}
+.content-galery {
+
+		&__card {
+            img{
+
+            }
+		}
+
+		&__more {
+		}
+
+		&__btn {
+		}
+}
+}
+@media (max-width: 767.98px){
+    .content-galery {
+		&__card {
+            align-items: center;
+            justify-content: center;
+            img{
+
+            }
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;   
+            justify-items: center;   
+            :nth-child(odd){
+                margin-top: 55px;
+            }
         }
     }
 }

@@ -19,9 +19,31 @@ window.onclick = function (event) {
     }
 }
 
+
 $(document).ready(function() {
     $('.header__burger').click(function (event) {
         $('.header__burger, header__nav, .nav-header').toggleClass('active');
         $('body').toggleClass('lock');
     });
 });
+
+
+function card() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+    if (dots.style.display === "none") {
+        dots.style.display = "contents";
+        btnText.innerHTML = "Load more";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Hide works";
+        moreText.style.display = "contents";
+    }
+}
+
+
+
+
+
